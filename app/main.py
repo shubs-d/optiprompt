@@ -1,0 +1,28 @@
+"""Application entry point for OptiPrompt FastAPI service."""
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.api.optimize import router as optimize_router
+
+app = FastAPI(
+    title="OptiPrompt",
+    version="1.0.0",
+    description="Deterministic prompt optimization engine (no ML)",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/health")
+def health() -> dict:
+    return {"status": "ok"}
+
+
+app.include_router(optimize_router)

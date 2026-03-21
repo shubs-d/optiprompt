@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Token Savings</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <section class="hero">
+        <p class="eyebrow">Prompt Efficiency</p>
+        <h1>Token Savings Analyzer</h1>
+        <p class="subtitle">Compare original vs optimized prompts and keep a savings history.</p>
+      </section>
+
+      <section class="card input-card">
+        <label for="backendUrl">Backend URL</label>
+        <input id="backendUrl" type="url" placeholder="http://127.0.0.1:8000" />
+
+        <label for="optimizeMode">Optimization Mode</label>
+        <select id="optimizeMode">
+          <option value="aggressive">aggressive</option>
+          <option value="balanced" selected>balanced</option>
+          <option value="safe">safe</option>
+        </select>
+
+        <label for="originalText">Original Prompt</label>
+        <textarea id="originalText" placeholder="Paste your original prompt..."></textarea>
+
+        <label for="optimizedText">Optimized Prompt</label>
+        <textarea id="optimizedText" placeholder="Paste the optimized prompt..."></textarea>
+
+        <div class="actions">
+          <button id="compressBtn" class="btn btn-primary">Compress</button>
+          <button id="analyzeBtn" class="btn btn-primary">Analyze</button>
+          <button id="saveBtn" class="btn btn-accent" disabled>Save</button>
+        </div>
+      </section>
+
+      <section class="card results-card" id="resultsCard">
+        <h2>Current Analysis</h2>
+        <div class="metrics-grid">
+          <div class="metric">
+            <span class="label">Original Tokens</span>
+            <strong id="originalTokens">0</strong>
+          </div>
+          <div class="metric">
+            <span class="label">Optimized Tokens</span>
+            <strong id="optimizedTokens">0</strong>
+          </div>
+          <div class="metric">
+            <span class="label">Tokens Saved</span>
+            <strong id="savedTokens">0</strong>
+          </div>
+          <div class="metric">
+            <span class="label">Savings</span>
+            <strong id="savedPercent">0%</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="card insights-card">
+        <h2>Saved Insights</h2>
+        <div class="metrics-grid">
+          <div class="metric">
+            <span class="label">Entries</span>
+            <strong id="historyCount">0</strong>
+          </div>
+          <div class="metric">
+            <span class="label">Total Saved</span>
+            <strong id="totalSaved">0</strong>
+          </div>
+          <div class="metric">
+            <span class="label">Average Savings</span>
+            <strong id="avgSavings">0%</strong>
+          </div>
+          <div class="metric">
+            <span class="label">Best Record</span>
+            <strong id="bestSaved">0</strong>
+          </div>
+        </div>
+
+        <div class="insights-footer">
+          <button id="openAnalyticsBtn" class="btn btn-ghost">Open Full Analytics</button>
+          <p id="statusText" class="status"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

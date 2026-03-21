@@ -1,0 +1,8 @@
+{
+  "remove_fillers": true,
+  "compress_phrases": true,
+  "drop_adjectives": true,
+  "preserve_keywords": true,
+  "adjective_drop_strength": 0.65,
+  "phrase_compress_strength": 0.8
+}

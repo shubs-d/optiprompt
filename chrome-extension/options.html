@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Token Savings Analytics</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Token Savings Analyzer</p>
+          <h1>Saved Analytics</h1>
+          <p class="subtitle">Track cumulative impact of prompt optimization over time.</p>
+        </div>
+        <div class="top-actions">
+          <button id="exportBtn" class="btn btn-accent">Export JSON</button>
+          <button id="clearBtn" class="btn btn-ghost">Clear History</button>
+        </div>
+      </header>
+
+      <section class="stat-grid">
+        <article class="stat-card">
+          <span class="label">Entries</span>
+          <strong id="entriesValue">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="label">Total Tokens Saved</span>
+          <strong id="totalSavedValue">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="label">Average Savings</span>
+          <strong id="avgSavingsValue">0%</strong>
+        </article>
+        <article class="stat-card">
+          <span class="label">Best Single Save</span>
+          <strong id="bestSaveValue">0</strong>
+        </article>
+      </section>
+
+      <section class="chart-card">
+        <h2>Recent Savings Trend</h2>
+        <div id="bars" class="bars"></div>
+      </section>
+
+      <section class="table-card">
+        <h2>History</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Original</th>
+                <th>Optimized</th>
+                <th>Saved</th>
+                <th>Savings %</th>
+              </tr>
+            </thead>
+            <tbody id="historyRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <p id="status" class="status"></p>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
