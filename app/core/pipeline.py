@@ -37,7 +37,8 @@ class OptiPromptPipeline:
         intent = detect_intent(simplified, use_semantic_refinement=True)
         
         # 4. GEPA - Entropy calculation
-        surprisal_scores = calculate_surprisal(simplified)
+        surprisal_scores_data = calculate_surprisal(simplified)
+        surprisal_scores = [t[2] for t in surprisal_scores_data]
         avg_surprisal = sum(surprisal_scores) / len(surprisal_scores) if surprisal_scores else 0.0
         
         # 5. Variant Generation
