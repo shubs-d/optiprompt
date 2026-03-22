@@ -23,6 +23,14 @@ class OptimizeRequest(BaseModel):
     )
     debug: bool = Field(default=False, description="Return stage-by-stage details")
     seed: int = Field(default=42, ge=0, le=2**31 - 1, description="Deterministic seed")
+    rl_enabled: bool = Field(default=True, description="Enable RL strategy selection")
+    rl_q_table_path: str = Field(
+        default=".optiprompt_q_table.json",
+        description="Path to persisted RL Q-table JSON",
+    )
+    rl_alpha: float = Field(default=0.2, ge=0.0, le=1.0, description="Q-learning rate")
+    rl_gamma: float = Field(default=0.0, ge=0.0, le=1.0, description="Discount factor")
+    rl_epsilon: float = Field(default=0.05, ge=0.0, le=1.0, description="Exploration rate")
 
 
 class OptimizeResponse(BaseModel):
@@ -51,6 +59,11 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
             seed=payload.seed,
             include_candidates=payload.include_candidates,
             debug=payload.debug,
+            rl_enabled=payload.rl_enabled,
+            rl_q_table_path=payload.rl_q_table_path,
+            rl_alpha=payload.rl_alpha,
+            rl_gamma=payload.rl_gamma,
+            rl_epsilon=payload.rl_epsilon,
         )
         return pipeline.optimize(payload.prompt, cfg)
     except ValueError as exc:

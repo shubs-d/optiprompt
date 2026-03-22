@@ -1,15 +1,44 @@
 {
   "manifest_version": 3,
-  "name": "Token Savings Analyzer",
-  "description": "Analyze prompt token savings and track optimization history.",
-  "version": "1.0.0",
-  "permissions": ["storage"],
+  "name": "OptiPrompt - AI Prompt Optimizer",
+  "version": "2.0.0",
+  "description": "Full prompt productivity toolkit - optimize, enhance, templates, and analytics. Powered by a local FastAPI backend.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
   "host_permissions": [
+    "http://0.0.0.0/*",
     "http://127.0.0.1/*",
-    "http://localhost/*"
+    "http://localhost/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*",
+    "https://www.perplexity.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*",
+        "https://www.perplexity.ai/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
   ],
   "action": {
-    "default_title": "Token Savings Analyzer",
+    "default_title": "OptiPrompt",
     "default_popup": "popup.html"
   },
   "options_page": "options.html"

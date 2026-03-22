@@ -14,6 +14,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--include-candidates", action="store_true")
+    parser.add_argument("--disable-rl", action="store_true", help="Disable RL strategy selection")
+    parser.add_argument("--rl-epsilon", type=float, default=0.05, help="Exploration rate (0.0-1.0)")
+    parser.add_argument("--rl-alpha", type=float, default=0.2, help="Q-learning rate (0.0-1.0)")
+    parser.add_argument("--rl-gamma", type=float, default=0.0, help="Discount factor (0.0-1.0)")
+    parser.add_argument(
+        "--rl-q-table-path",
+        type=str,
+        default=".optiprompt_q_table.json",
+        help="JSON path for persisted RL Q-table",
+    )
     parser.add_argument("--input-file", type=str, default="", help="Read prompt from text file")
     return parser
 
@@ -38,6 +48,11 @@ def main() -> int:
         seed=args.seed,
         include_candidates=args.include_candidates,
         debug=args.debug,
+        rl_enabled=not args.disable_rl,
+        rl_q_table_path=args.rl_q_table_path,
+        rl_alpha=args.rl_alpha,
+        rl_gamma=args.rl_gamma,
+        rl_epsilon=args.rl_epsilon,
     )
     result = pipeline.optimize(prompt, cfg)
     print(json.dumps(result, indent=2, ensure_ascii=True))

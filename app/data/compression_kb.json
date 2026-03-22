@@ -1,0 +1,3656 @@
+[
+  {
+    "category": "phrase_replacement",
+    "text": "notwithstanding the fact that",
+    "action": "replace",
+    "replacement": "although",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "regardless of the fact that",
+    "action": "replace",
+    "replacement": "although",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in spite of the fact that",
+    "action": "replace",
+    "replacement": "although",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "conduct an investigation",
+    "action": "replace",
+    "replacement": "investigate",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "a significant amount of",
+    "action": "replace",
+    "replacement": "much",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "take into consideration",
+    "action": "replace",
+    "replacement": "consider",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in such a manner as to",
+    "action": "replace",
+    "replacement": "to",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "owing to the fact that",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "at the current moment",
+    "action": "replace",
+    "replacement": "now",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "at this point in time",
+    "action": "replace",
+    "replacement": "now",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "despite the fact that",
+    "action": "replace",
+    "replacement": "although",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "give consideration to",
+    "action": "replace",
+    "replacement": "consider",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in close proximity to",
+    "action": "replace",
+    "replacement": "near",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "on the condition that",
+    "action": "replace",
+    "replacement": "if",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "with the exception of",
+    "action": "replace",
+    "replacement": "except",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "come to a conclusion",
+    "action": "replace",
+    "replacement": "conclude",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "due to the fact that",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "has the potential to",
+    "action": "replace",
+    "replacement": "can",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "it is essential that",
+    "action": "replace",
+    "replacement": "must",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "it is important that",
+    "action": "replace",
+    "replacement": "importantly,",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "it is necessary that",
+    "action": "replace",
+    "replacement": "must",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "at the present time",
+    "action": "replace",
+    "replacement": "now",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "for the reason that",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "has the capacity to",
+    "action": "replace",
+    "replacement": "can",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "i would like you to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "is in a position to",
+    "action": "replace",
+    "replacement": "can",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "on the grounds that",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "perform an analysis",
+    "action": "replace",
+    "replacement": "analyze",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "for the purpose of",
+    "action": "replace",
+    "replacement": "to",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "has the ability to",
+    "action": "replace",
+    "replacement": "can",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the near future",
+    "action": "replace",
+    "replacement": "soon",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the presence of",
+    "action": "replace",
+    "replacement": "with",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the vicinity of",
+    "action": "replace",
+    "replacement": "near",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "it is crucial that",
+    "action": "replace",
+    "replacement": "must",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "on a monthly basis",
+    "action": "replace",
+    "replacement": "monthly",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "on a regular basis",
+    "action": "replace",
+    "replacement": "regularly",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "reach a conclusion",
+    "action": "replace",
+    "replacement": "conclude",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "the reason is that",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "there is a need to",
+    "action": "replace",
+    "replacement": "must",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "until such time as",
+    "action": "replace",
+    "replacement": "until",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "a large number of",
+    "action": "replace",
+    "replacement": "many",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "a small number of",
+    "action": "replace",
+    "replacement": "few",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the absence of",
+    "action": "replace",
+    "replacement": "without",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the event that",
+    "action": "replace",
+    "replacement": "if",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "on a weekly basis",
+    "action": "replace",
+    "replacement": "weekly",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "take into account",
+    "action": "replace",
+    "replacement": "consider",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the amount of",
+    "action": "replace",
+    "replacement": "for",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the case that",
+    "action": "replace",
+    "replacement": "if",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "on a daily basis",
+    "action": "replace",
+    "replacement": "daily",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "the reason being",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "a great deal of",
+    "action": "replace",
+    "replacement": "much",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "make a decision",
+    "action": "replace",
+    "replacement": "decide",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "at this moment",
+    "action": "replace",
+    "replacement": "now",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in the case of",
+    "action": "replace",
+    "replacement": "for",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "whether or not",
+    "action": "replace",
+    "replacement": "whether",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "would you mind",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "a majority of",
+    "action": "replace",
+    "replacement": "most",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "assuming that",
+    "action": "replace",
+    "replacement": "if",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "i need you to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "i want you to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "provided that",
+    "action": "replace",
+    "replacement": "if",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "subsequent to",
+    "action": "replace",
+    "replacement": "after",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "the fact that",
+    "action": "replace",
+    "replacement": "that",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "at this time",
+    "action": "replace",
+    "replacement": "now",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "by reason of",
+    "action": "replace",
+    "replacement": "because",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "put together",
+    "action": "replace",
+    "replacement": "assemble",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "bring about",
+    "action": "replace",
+    "replacement": "cause",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "in order to",
+    "action": "replace",
+    "replacement": "to",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "be able to",
+    "action": "replace",
+    "replacement": "can",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "is able to",
+    "action": "replace",
+    "replacement": "can",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "carry out",
+    "action": "replace",
+    "replacement": "do",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "could you",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "would you",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "phrase_replacement",
+    "text": "prior to",
+    "action": "replace",
+    "replacement": "before",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "framing",
+    "text": "can you",
+    "action": "remove",
+    "replacement": "",
+    "priority": 3,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "i was wondering if you could please",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "for all intents and purposes",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "i was wondering if you could",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "it is important to note that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "it is worth mentioning that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "what i'm trying to say is",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "when all is said and done",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "it is worth noting that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "it should be noted that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "to be completely honest",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "i was wondering if you",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "all things considered",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "at the end of the day",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "to tell you the truth",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "you need to make sure",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "does that make sense",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "for your information",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "to be totally honest",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "with that being said",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "you know what i mean",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "as a consequence of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "as a matter of fact",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "if i'm being honest",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "if that makes sense",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in conjunction with",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "please make sure to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "first and foremost",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in accordance with",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in compliance with",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "please ensure that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "for the most part",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "honestly speaking",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in the process of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "please be sure to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "thanks in advance",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "you should try to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "could you please",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "having said that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "just so you know",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "please note that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "would you please",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "don't forget to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "for the sake of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "hope that helps",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "just to clarify",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "let's be honest",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "needless to say",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "that being said",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "will you please",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "with regards to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "with respect to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "as a result of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "as we all know",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "as you can see",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "can you please",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "each and every",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in addition to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in other words",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "like literally",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "make sure that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "unquestionably",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "what i mean is",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "with regard to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "appropriately",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in my opinion",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in regards to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "it seems like",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "on account of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "please kindly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "point in time",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "quite frankly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "truth be told",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "you know what",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "and all that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "by virtue of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "considerable",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "i think that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in regard to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "indisputably",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "kind of like",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "let me think",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "make sure to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "more or less",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "on behalf of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "one and only",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "or something",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "particularly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "sort of like",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "specifically",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "the point is",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "the thing is",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "to be honest",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "appropriate",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "by means of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "do you mind",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "essentially",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "i feel like",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in light of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in terms of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "just saying",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "or whatever",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "outstanding",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "pretty much",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "remember to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "significant",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "substantial",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "undoubtedly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "absolutely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "adequately",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "and things",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "apparently",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "be sure to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "completely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "definitely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "especially",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "in view of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "incredibly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "let me see",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "presumably",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "remarkable",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "thoroughly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "to be fair",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "and stuff",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "basically",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "blah blah",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "carefully",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "certainly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "evidently",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "excellent",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "extremely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "fantastic",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "literally",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "more like",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "naturally",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "obviously",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "perfectly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "wonderful",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "actually",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "adequate",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "arguably",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "entirely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "honestly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "properly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "somewhat",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "strongly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "will you",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "you know",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "amazing",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "awesome",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "careful",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "clearly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "frankly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "greatly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "i guess",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "kind of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "notable",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "so like",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "sort of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "totally",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "utterly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "and um",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "but um",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "deeply",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "fairly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "highly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_phrase",
+    "text": "i mean",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "kindly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "merely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "please",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "pretty",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "proper",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "rather",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "really",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "simply",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "surely",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "politeness",
+    "text": "thanks",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "great",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "quite",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "truly",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "even",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "good",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "just",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "nice",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "only",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "modifier",
+    "text": "very",
+    "action": "remove",
+    "replacement": "",
+    "priority": 2,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "fundamentally",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "already",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "between",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "further",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "goodbye",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "through",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "before",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "during",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "should",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "theirs",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "about",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "above",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "after",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "again",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "being",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "below",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "could",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "hello",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "might",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "shall",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "still",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "thank",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "their",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "there",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "these",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "those",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "under",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "where",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "which",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "whose",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "would",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "yikes",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "yours",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "also",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "been",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "does",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "down",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "else",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "from",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "have",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "here",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "hers",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "heyy",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "hmmm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "into",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "mhmm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "mine",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "must",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "okay",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "ours",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "over",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "pfft",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "phew",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "than",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "that",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "them",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "then",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "they",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "this",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "were",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "what",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "when",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "whew",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "whom",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "will",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "with",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "yeah",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "your",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "ahh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "and",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "are",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "but",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "bye",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "can",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "did",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "erm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "for",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "had",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "has",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "her",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "hey",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "him",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "his",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "hmm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "how",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "huh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "its",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "may",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "meh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "mhm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "nor",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "not",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "off",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "oof",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "our",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "out",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "pls",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "plz",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "psh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "she",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "the",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "thx",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "too",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "ugh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "uhh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "umm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "was",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "who",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "wow",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "yay",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "yep",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "yet",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "you",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "ah",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "am",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "an",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "as",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "at",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "be",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "by",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "do",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "er",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "he",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "hi",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "hm",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "if",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "in",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "is",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "it",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "me",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "my",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "no",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "of",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "oh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "ok",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "on",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "or",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "so",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "to",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "uh",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "filler_word",
+    "text": "um",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": false,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "up",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "us",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "we",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "a",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  },
+  {
+    "category": "connector",
+    "text": "i",
+    "action": "remove",
+    "replacement": "",
+    "priority": 1,
+    "context_sensitive": true,
+    "source": "extracted"
+  }
+]

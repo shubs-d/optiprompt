@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.optimize import router as optimize_router
+from app.api.routes import router as api_router
 
 app = FastAPI(
     title="OptiPrompt",
@@ -25,4 +25,4 @@ def health() -> dict:
     return {"status": "ok"}
 
 
-app.include_router(optimize_router)
+app.include_router(api_router)

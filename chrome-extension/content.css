@@ -1,0 +1,136 @@
+.optiprompt-optimize-btn {
+  position: absolute;
+  z-index: 2147483000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #5a2cff 0%, #9a4bff 55%, #d06bff 100%);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  box-shadow: 0 8px 24px rgba(79, 41, 180, 0.34);
+  cursor: pointer;
+  opacity: 0.92;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+
+.optiprompt-optimize-btn:hover {
+  opacity: 1;
+  transform: translate(-100%, -100%) scale(1.03);
+  box-shadow: 0 10px 30px rgba(93, 43, 211, 0.45);
+}
+
+.optiprompt-optimize-btn:active {
+  transform: translate(-100%, -100%) scale(0.98);
+}
+
+.optiprompt-optimize-btn.is-loading {
+  cursor: progress;
+  opacity: 0.72;
+}
+
+.optiprompt-popup {
+  position: absolute;
+  z-index: 2147483001;
+  max-width: min(440px, calc(100vw - 24px));
+  border: 1px solid rgba(157, 171, 194, 0.22);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(15, 22, 34, 0.97), rgba(20, 28, 43, 0.97));
+  color: #e5edf9;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+.optiprompt-popup-label {
+  padding: 10px 12px 6px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #8ca6c6;
+  font-weight: 700;
+}
+
+.optiprompt-popup-preview {
+  max-height: 180px;
+  overflow: auto;
+  padding: 0 12px 12px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #f2f7ff;
+}
+
+.optiprompt-popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 10px 12px 12px;
+  border-top: 1px solid rgba(157, 171, 194, 0.14);
+  background: rgba(8, 12, 20, 0.45);
+}
+
+.optiprompt-popup-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.14s ease, opacity 0.14s ease, background 0.14s ease;
+}
+
+.optiprompt-popup-btn:hover {
+  transform: translateY(-1px);
+}
+
+.optiprompt-popup-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.optiprompt-popup-btn-apply {
+  background: linear-gradient(140deg, #6c3cff, #ab5cff);
+  color: #ffffff;
+}
+
+.optiprompt-popup-btn-close {
+  background: rgba(143, 158, 182, 0.22);
+  color: #d7e3f5;
+}
+
+.optiprompt-popup-stats {
+  padding: 8px 12px;
+  background: rgba(10, 15, 25, 0.6);
+  border-top: 1px solid rgba(157, 171, 194, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #a3b8cc;
+}
+
+.optiprompt-popup-stats .stat-badge {
+  background: rgba(108, 60, 255, 0.18);
+  color: #d8c2ff;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.optiprompt-popup-stats .stat-badge b {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.optiprompt-popup-stats .stat-detail {
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}

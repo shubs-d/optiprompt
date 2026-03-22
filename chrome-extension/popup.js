@@ -1,6 +1,6 @@
 const STORAGE_KEY = "tokenHistory";
 const SETTINGS_KEY = "compressorSettings";
-const DEFAULT_BACKEND_URL = "http://127.0.0.1:8000";
+const DEFAULT_BACKEND_URL = "http://0.0.0.0:8099";
 
 const el = {
   backendUrl: document.getElementById("backendUrl"),
@@ -110,6 +110,21 @@ function setStatus(text, isError = false) {
   el.statusText.style.color = isError ? "#9f2f1d" : "#315f54";
 }
 
+async function sendBackendRequest(type, endpoint, payload) {
+  const result = await chrome.runtime.sendMessage({
+    type,
+    endpoint,
+    payload
+  });
+
+  if (result && result.data) {
+    return result.data;
+  }
+
+  const detail = result && result.error ? result.error : "Failed to reach backend.";
+  throw new Error(detail);
+}
+
 function applyCurrentAnalysis() {
   const original = el.originalText.value;
   const optimized = el.optimizedText.value;
@@ -147,26 +162,14 @@ async function compressPrompt() {
   try {
     await saveSettings();
 
-    const response = await fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        prompt,
-        mode,
-        include_candidates: false,
-        debug: false,
-        seed: 42
-      })
+    const data = await sendBackendRequest("OPTIMIZE_PROMPT", endpoint, {
+      prompt,
+      mode,
+      include_candidates: false,
+      debug: false,
+      seed: 42
     });
 
-    if (!response.ok) {
-      const detail = await response.text();
-      throw new Error(`Backend ${response.status}: ${detail}`);
-    }
-
-    const data = await response.json();
     el.optimizedText.value = data.optimized_prompt || "";
     applyCurrentAnalysis();
   } catch (err) {
@@ -176,8 +179,65 @@ async function compressPrompt() {
   }
 }
 
+async function analyzePrompt() {
+  const original = el.originalText.value.trim();
+  const optimized = el.optimizedText.value.trim();
+
+  if (!original) {
+    setStatus("Add an original prompt first.", true);
+    return;
+  }
+
+  const backendUrl = cleanBaseUrl(el.backendUrl.value) || DEFAULT_BACKEND_URL;
+  const endpoint = `${backendUrl}/analyze`;
+  const mode = el.optimizeMode.value || "balanced";
+
+  el.analyzeBtn.disabled = true;
+  setStatus("Analyzing with backend...");
+
+  try {
+    await saveSettings();
+
+    const data = await sendBackendRequest("ANALYZE_PROMPT", endpoint, {
+      original_prompt: original,
+      optimized_prompt: optimized || null,
+      mode,
+      seed: 42
+    });
+
+    if (data.optimized_prompt && !optimized) {
+      el.optimizedText.value = data.optimized_prompt;
+    }
+
+    const metrics = data.metrics || {};
+    latestAnalysis = {
+      id: crypto.randomUUID(),
+      timestamp: Date.now(),
+      title: original.slice(0, 72) || "Untitled prompt",
+      originalTokens: Number(metrics.original_token_count || estimateTokens(original)),
+      optimizedTokens: Number(metrics.optimized_token_count || estimateTokens(data.optimized_prompt || optimized)),
+      saved: Math.max(0, Number(metrics.original_token_count || 0) - Number(metrics.optimized_token_count || 0)),
+      percent: Number(data.token_reduction_percent || 0)
+    };
+
+    renderCurrent(latestAnalysis);
+    el.saveBtn.disabled = false;
+    setStatus(
+      latestAnalysis.saved > 0
+        ? `Analyzed. You saved ${latestAnalysis.saved} estimated tokens.`
+        : "Analysis complete. No token savings detected yet."
+    );
+  } catch (err) {
+    // Fall back to local analysis to preserve existing UX when backend analyze is unavailable.
+    applyCurrentAnalysis();
+    setStatus(`Backend analyze unavailable, used local estimate. ${err.message}`, true);
+  } finally {
+    el.analyzeBtn.disabled = false;
+  }
+}
+
 el.compressBtn.addEventListener("click", compressPrompt);
-el.analyzeBtn.addEventListener("click", applyCurrentAnalysis);
+el.analyzeBtn.addEventListener("click", analyzePrompt);
 
 el.saveBtn.addEventListener("click", async () => {
   if (!latestAnalysis) {

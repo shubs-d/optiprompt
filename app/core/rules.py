@@ -16,13 +16,9 @@ from app.utils.text_utils import (
 )
 
 
-# ── Conversational tokens (low-value greetings/politeness/filler) ────────────
-CONVERSATIONAL_TOKENS: Set[str] = {
-    "hello", "hi", "hey", "heyy",
-    "thanks", "thank", "thx",
-    "please", "pls", "plz",
-    "bye", "goodbye",
-}
+from app.core.kb import kb
+
+CONVERSATIONAL_TOKENS: Set[str] = kb.conversational_tokens
 
 # ── Important context words to preserve near conversational tokens ───────────
 IMPORTANT_CONTEXT_WORDS: Set[str] = {
@@ -71,6 +67,7 @@ def apply_rules(
         )
 
     text = _remove_redundant_clauses(text)
+    text = _convert_questions_to_commands(text)
     text = normalize_whitespace(text)
     return text
 
@@ -158,3 +155,32 @@ def _remove_redundant_clauses(text: str) -> str:
             unique.append(sent)
 
     return ' '.join(unique)
+
+
+def _convert_questions_to_commands(text: str) -> str:
+    """
+    Convert imperative requests that were framed as questions into commands.
+    Since 'can you', 'please', etc., have been removed by earlier stages,
+    a sentence starting with a typical imperative verb but ending with '?'
+    will have its question mark replaced with a period.
+    Also handles trailing question marks left empty after prefix removal.
+    """
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    processed = []
+    
+    for sent in sentences:
+        if not sent:
+            continue
+        # If it ends with a question mark but now starts directly with what looks like an action/verb
+        # (mostly handled naturally since the prefix is gone), we just drop the '?' to a '.'
+        # if the sentence lacks typical question wh-words (who, what, where, when, why, how)
+        # at the start.
+        if sent.endswith('?'):
+            words = sent.lower().split()
+            first_word = words[0].strip(".,!?;:\"'()-") if words else ""
+            wh_words = {"who", "what", "where", "when", "why", "how", "is", "are", "do", "does", "did", "can", "could", "should", "would"}
+            if first_word and first_word not in wh_words:
+                sent = sent[:-1] + "."
+        processed.append(sent)
+
+    return " ".join(processed)

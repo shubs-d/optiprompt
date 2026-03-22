@@ -1,0 +1,17 @@
+{
+  "len:long|intent:analysis|noise:high": {
+    "aggressive": 0.344377,
+    "balanced": 0.792722,
+    "safe": 0.0
+  },
+  "len:long|intent:creation|noise:high": {
+    "aggressive": 0.0,
+    "balanced": 0.108161,
+    "safe": 0.0
+  },
+  "len:short|intent:general|noise:low": {
+    "aggressive": 0.0,
+    "balanced": 0.107,
+    "safe": 0.0
+  }
+}
