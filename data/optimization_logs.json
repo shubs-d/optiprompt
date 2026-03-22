@@ -1,7 +1,38 @@
 [
-
+  {
+    "timestamp": "2026-03-22T19:57:01.227023+00:00",
+    "input": {
+      "original_prompt": "Could you write a Python script to deploy this app to Kubernetes?",
+      "constraints": {
+        "max_tokens": 15,
+        "semantic_threshold": 0.8
+      }
+    },
+    "output": {
+      "optimized_prompt": "could you write a python to deploy this app kuberes?",
+      "intent": "coding"
+    },
+    "metrics": {
+      "original_tokens": 13,
+      "optimized_tokens": 11,
+      "token_reduction_percent": 15.38,
+      "semantic_similarity": 0.9385,
+      "compression_gain": 0.1538
+    },
+    "system": {
+      "models_used": {
+        "gepa": "distilgpt2",
+        "semantic": "MiniLM",
+        "generation": "phi-2 | tinyllama"
+      },
+      "compute_mode": "balanced",
+      "final_aggression": 0.5,
+      "iterations": 1
+    }
+  }
+,
 {
-  "timestamp": "2026-03-22T19:57:01.227023+00:00",
+  "timestamp": "2026-03-22T20:04:47.315220+00:00",
   "input": {
     "original_prompt": "Could you write a Python script to deploy this app to Kubernetes?",
     "constraints": {
@@ -28,6 +59,35 @@
     },
     "compute_mode": "balanced",
     "final_aggression": 0.5,
+    "iterations": 1
+  }
+}
+,
+{
+  "timestamp": "2026-03-22T20:14:08.766059+00:00",
+  "input": {
+    "original_prompt": "Act as an expert Cloud Architect. I need you to write a comprehensive design document and a Python script that will deploy my FastAPI application to Kubernetes on AWS EKS. Ensure that the script handles VPC creation, IAM roles, and sets up a Load Balancer. Must be under 500 words and use strict security practices. Do not use plain text secrets.",
+    "constraints": {}
+  },
+  "output": {
+    "optimized_prompt": "Role: Expert Cloud Architect\nObjective: Write a comprehensive design document and a python script that will deploy my fastapi application to kubernetes on aws eks\nConstraints:\n- Follow strict length limits\n- Do not use plain text secrets\n- Ensure that the script handles vpc creation\n- Must be under 500 words and use strict security practices\n\nInput:\nAct as an expert Cloud Architect. I need you to write a comprehensive design document and a Python script that will deploy my FastAPI application to Kubernetes on AWS EKS. Ensure that the script handles VPC creation, IAM roles, and sets up a Load Balancer. Must be under 500 words and use strict security practices. Do not use plain text secrets.",
+    "intent": "coding"
+  },
+  "metrics": {
+    "original_tokens": 68,
+    "optimized_tokens": 130,
+    "token_reduction_percent": 0.0,
+    "semantic_similarity": 1.0,
+    "compression_gain": 0.0
+  },
+  "system": {
+    "models_used": {
+      "gepa": "distilgpt2",
+      "semantic": "MiniLM",
+      "generation": "phi-2 | tinyllama"
+    },
+    "compute_mode": "balanced",
+    "final_aggression": 0.0,
     "iterations": 1
   }
 }

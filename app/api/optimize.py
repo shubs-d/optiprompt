@@ -15,21 +15,25 @@ from app.gepa.entropy import prune_prompt
 from app.generation.generator import generate_variants
 from app.semantic.similarity import semantic_similarity
 from app.logging.logger import logger
+from app.structuring.transformer import extract_role, extract_objective, extract_constraints, extract_input, build_structured_prompt
 
 router = APIRouter(prefix="/optimize", tags=["optimize"])
 
 class OptimizeRequest(BaseModel):
     prompt: str = Field(..., min_length=1, description="Raw prompt text to optimize")
     constraints: Dict[str, Any] = Field(default_factory=dict, description="Custom constraints like max_tokens")
-    compute_mode: Literal["fast", "balanced", "aggressive"] = Field(
+    compute_mode: Literal["fast", "balanced", "high_quality"] = Field(
         default="balanced",
         description="Compute mode: fast skips LLM variant generation"
     )
 
 class OptimizeResponse(BaseModel):
-    optimized_prompt: str
-    metrics: Dict[str, Any]
-    system: Dict[str, Any]
+    structured_prompt: str
+    compression_ratio: float
+    structure_applied: bool
+    optimized_prompt: Optional[str] = None
+    metrics: Optional[Dict[str, Any]] = None
+    system: Optional[Dict[str, Any]] = None
 
 @router.post("", response_model=OptimizeResponse)
 def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
@@ -38,35 +42,71 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
         normalized = normalize_text(raw_prompt)
         orig_tokens = len(tokenize(normalized)) or 1
         
-        # 1. Constraint Parser
-        constraints = payload.constraints
-        min_tokens = constraints.get("min_tokens", 5)
-        # Default to compressing to at least 80% if not specified
-        max_tokens = constraints.get("max_tokens", max(10, int(orig_tokens * 0.8)))
-        semantic_threshold = constraints.get("semantic_threshold", 0.85)
+        # 1. Compute Mode Limits
+        compute_mode = payload.compute_mode
+        if compute_mode == "fast":
+            MAX_COMPRESSION = 0.5
+        elif compute_mode == "balanced":
+            MAX_COMPRESSION = 0.4
+        elif compute_mode == "high_quality":
+            MAX_COMPRESSION = 0.3
+        else:
+            MAX_COMPRESSION = 0.4
+            
+        # 2. Constraints & Parameters
+        TARGET_RANGE = (0.25, 0.45)
+        MIN_SEMANTIC = 0.88
         
-        # 2. Intent Detection
+        # 3. Intent Detection
         intent_label = detect_intent(normalized, use_semantic_refinement=True)
             
-        # 3. Aggression Controller Loop setup
-        low, high = 0.0, 1.0
+        # 4. Semantic Structuring Logic
+        words = raw_prompt.split()
+        complexity_score = len(set(words)) / max(1, len(words))
+        
+        structure_applied = False
+        working_prompt = normalized
+        
+        if len(words) > 20 or complexity_score > 0.8:
+            role = extract_role(raw_prompt)
+            objective = extract_objective(raw_prompt)
+            req_constraints = extract_constraints(raw_prompt)
+            extracted_input = extract_input(raw_prompt)
+            
+            working_prompt = build_structured_prompt(role, objective, req_constraints, extracted_input)
+            structure_applied = True
+            
+            # Reduce GEPA aggression limit
+            MAX_COMPRESSION = min(MAX_COMPRESSION, 0.4)
+            
+        # 5. Aggression Controller
         aggression = 0.5
         max_iterations = 3
         
         best_candidate = None
         best_score = -100.0
-        last_candidate = None
+        
+        fallback_candidate = {
+            "text": working_prompt,
+            "token_count": len(tokenize(working_prompt)) or 1,
+            "semantic_similarity": 1.0,
+            "aggression": 0.0,
+            "iterations": 1,
+            "compression_ratio": max(0.0, 1.0 - ((len(tokenize(working_prompt)) or 1) / orig_tokens)),
+            "name": "fallback"
+        }
         
         for iteration in range(max_iterations):
-            cleaned = clean(normalized, filler_strength=0.8)
-            simplified = compress(cleaned, level=0.7)
-            
-            # GEPA (distilgpt2)
+            if not structure_applied:
+                cleaned = clean(working_prompt, filler_strength=0.8)
+                simplified = compress(cleaned, level=0.7)
+            else:
+                simplified = working_prompt
+                
+            # GEPA Modification Protected Search
             pruned = prune_prompt(simplified, aggression=aggression)
-            
             variants = {"gepa_baseline": pruned}
             
-            # Variant Generation (Phi-2/TinyLlama)
             if payload.compute_mode != "fast":
                 gen_variants = generate_variants(pruned, aggression=aggression)
                 variants.update(gen_variants)
@@ -74,21 +114,41 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
             iteration_best = None
             iteration_best_score = -100.0
             
-            # Semantic Evaluation (MiniLM)
+            # Semantic Evaluation & Updated Scoring
             for name, text in variants.items():
-                sim = semantic_similarity(normalized, text)
+                sim = float(semantic_similarity(normalized, text))
                 tok_count = len(tokenize(text)) or 1
-                ratio = tok_count / orig_tokens
+                compression_ratio = max(0.0, 1.0 - (tok_count / orig_tokens))
                 
-                # We want high similarity and high reduction (low ratio)
-                score = 0.5 * sim + 0.5 * (1.0 - ratio)
+                # Semantic Floor AND Hard Compression Cap valid tests 
+                is_valid = (compression_ratio <= MAX_COMPRESSION) and (sim >= MIN_SEMANTIC)
+                constraint_satisfaction = 1.0 if is_valid else 0.0
+                
+                # Built metrics
+                structure_score = 0.5
+                if "\n-" in text or "\n*" in text or "\n1." in text:
+                    structure_score += 0.3
+                if "structure" in name.lower():
+                    structure_score += 0.1
+                structure_score = min(1.0, structure_score)
+                
+                # Updated Score func execution
+                score = (
+                    0.5 * sim +
+                    0.25 * (1.0 - compression_ratio) +
+                    0.15 * structure_score +
+                    0.10 * constraint_satisfaction
+                )
+                
                 if score > iteration_best_score:
                     iteration_best_score = score
                     iteration_best = {
                         "text": text,
                         "token_count": tok_count,
                         "semantic_similarity": sim,
+                        "compression_ratio": compression_ratio,
                         "score": score,
+                        "is_valid": is_valid,
                         "name": name
                     }
                     
@@ -96,45 +156,27 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
                 continue
                 
             last_candidate = {**iteration_best, "aggression": aggression, "iterations": iteration + 1}
-            tok_count = iteration_best["token_count"]
-            sim = iteration_best["semantic_similarity"]
             
-            is_valid = (min_tokens <= tok_count <= max_tokens) and (sim >= semantic_threshold)
-            
-            if is_valid and iteration_best_score > best_score:
+            if iteration_best["is_valid"] and iteration_best_score > best_score:
                 best_score = iteration_best_score
-                best_candidate = {**iteration_best, "aggression": aggression, "iterations": iteration + 1}
+                best_candidate = last_candidate
             
-            # Binary Search Adjustment
-            if tok_count > max_tokens:
-                low = aggression
-            elif tok_count < min_tokens or sim < semantic_threshold:
-                high = aggression
-            else:
-                if is_valid:
-                    if best_candidate is None:
-                        best_candidate = {**iteration_best, "aggression": aggression, "iterations": iteration + 1}
-                    break
-                    
-            aggression = (low + high) / 2.0
+            # Target Compression Range adjustment
+            comp_ratio = iteration_best["compression_ratio"]
+            if comp_ratio > TARGET_RANGE[1]:
+                aggression -= 0.1
+            elif comp_ratio < TARGET_RANGE[0]:
+                aggression += 0.1
+                
+            aggression = max(0.0, min(0.7, aggression))
             
         if not best_candidate:
-            best_candidate = last_candidate or {
-                "text": raw_prompt,
-                "token_count": orig_tokens,
-                "semantic_similarity": 1.0,
-                "aggression": 0.0,
-                "iterations": max_iterations,
-                "name": "fallback"
-            }
+            best_candidate = fallback_candidate
             
         opt_text = best_candidate["text"]
         opt_tokens = best_candidate["token_count"]
-        # Make tokens accurate for extreme reduction
-        if opt_tokens == 0: opt_tokens = 1
-        
-        token_reduction_percent = max(0.0, 1.0 - (opt_tokens / orig_tokens)) * 100.0
-        compression_gain = max(0.0, 1.0 - (opt_tokens / orig_tokens))
+        token_reduction_percent = best_candidate["compression_ratio"] * 100.0
+        compression_gain = best_candidate["compression_ratio"]
         sim = float(best_candidate["semantic_similarity"])
         
         metrics = {
@@ -155,7 +197,7 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
         system = {
             "models_used": models_used,
             "compute_mode": payload.compute_mode,
-            "final_aggression": round(best_candidate.get("aggression", 0.0), 4),
+            "final_aggression": round(best_candidate.get("aggression", 0.0), 2),
             "iterations": best_candidate.get("iterations", 1)
         }
         
@@ -163,7 +205,7 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "input": {
                 "original_prompt": raw_prompt,
-                "constraints": constraints
+                "constraints": payload.constraints
             },
             "output": {
                 "optimized_prompt": opt_text,
@@ -173,11 +215,12 @@ def optimize_prompt(payload: OptimizeRequest) -> Dict[str, Any]:
             "system": system
         }
         
-        # Save JSON Log
         logger.log(log_entry)
         
-        # Return Response
         return {
+            "structured_prompt": opt_text,
+            "compression_ratio": round(compression_gain, 4),
+            "structure_applied": structure_applied,
             "optimized_prompt": opt_text,
             "metrics": metrics,
             "system": system

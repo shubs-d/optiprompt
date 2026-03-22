@@ -39,15 +39,31 @@ def prune_prompt(prompt: str, aggression: float = 0.5) -> str:
     model, tokenizer = model_loader.get_distilgpt2()
     scored_tokens = calculate_surprisal(prompt)
     
-    # threshold = base_threshold + (aggression * scaling_factor)
     base_threshold = 0.5
     scaling_factor = 2.5
     threshold = base_threshold + (aggression * scaling_factor)
     
+    PROTECTED_KEYWORDS = set([
+        "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "do", "does", "did",
+        "can", "could", "will", "would", "shall", "should", "may", "might", "must",
+        "write", "create", "make", "build", "generate", "code", "explain", "analyze", "deploy", "run",
+        "test", "debug", "fix", "update", "delete", "remove", "add", "insert", "select", "query",
+        "kubernetes", "aws", "gcp", "azure", "docker", "python", "javascript", "react", "node", "sql", "api",
+        "not", "no", "never", "always"
+    ])
+    
     kept_ids = []
     for t_id, t_str, surprisal in scored_tokens:
-        # Always keep first token (surprisal 0.0) or punctuation or high entropy tokens
-        if surprisal >= threshold or surprisal == 0.0 or not t_str.isalnum():
+        # Check for protected tokens (strip typical subword markers like 'Ġ')
+        clean_str = t_str.lower().strip(' \t\n\r.,!?#*Ġ')
+        is_protected = (
+            clean_str in PROTECTED_KEYWORDS or
+            any(char.isdigit() for char in t_str) or
+            not t_str.isalnum()
+        )
+        
+        # Always keep first token (surprisal 0.0) or protected or high entropy tokens
+        if surprisal >= threshold or surprisal == 0.0 or is_protected:
             kept_ids.append(t_id)
             
     if not kept_ids:
